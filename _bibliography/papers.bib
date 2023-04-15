@@ -1,84 +1,62 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
+@article{edirimuni2023iterativepfn,
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+  selected={true},
+  title={IterativePFN: True Iterative Point Cloud Filtering}, 
+  author={Dasith de Silva Edirimuni and Xuequan Lu and Zhiwen Shao and Gang Li and Antonio Robles-Kelly and Ying He},
+  year={2023},
+  eprint={2304.01529},
+  journal={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2304.01529},
+  abstract={The quality of point clouds is often limited by noise introduced during their capture process. Consequently, a fundamental 3D vision task is the removal of noise, known as point cloud filtering or denoising. State-of-the-art learning based methods focus on training neural networks to infer filtered displacements and directly shift noisy points onto the underlying clean surfaces. In high noise conditions, they iterate the filtering process. However, this iterative filtering is only done at test time and is less effective at ensuring points converge quickly onto the clean surfaces. We propose IterativePFN (iterative point cloud filtering network), which consists of multiple IterationModules that model the true iterative filtering process internally, within a single network. We train our IterativePFN network using a novel loss function that utilizes an adaptive ground truth target at each iteration to capture the relationship between intermediate filtering results during training. This ensures that the filtered results converge faster to the clean surfaces. Our method is able to obtain better performance compared to state-of-the-art methods. The source code can be found at https://github.com/ddsediri/IterativePFN.}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
+@article{edirimuni2022contrastive,
   bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+  selected={true},
+  title={Contrastive Learning for Joint Normal Estimation and Point Cloud Filtering}, 
+  author={Dasith de Silva Edirimuni and Xuequan Lu and Gang Li and Antonio Robles-Kelly},
+  year={2022},
+  eprint={2208.06811},
+  journal={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2208.06811},
+  abstract={Point cloud filtering and normal estimation are two fundamental research problems in the 3D field. Existing methods usually perform normal estimation and filtering separately and often show sensitivity to noise and/or inability to preserve sharp geometric features such as corners and edges. In this paper, we propose a novel deep learning method to jointly estimate normals and filter point clouds. We first introduce a 3D patch based contrastive learning framework, with noise corruption as an augmentation, to train a feature encoder capable of generating faithful representations of point cloud patches while remaining robust to noise. These representations are consumed by a simple regression network and supervised by a novel joint loss, simultaneously estimating point normals and displacements that are used to filter the patch centers. Experimental results show that our method well supports the two tasks simultaneously and preserves sharp features and fine details. It generally outperforms state-of-the-art techniques on both tasks.},
+  preview={joint_learning_before.png}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
+@inproceedings{wang2022triplet,
   bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+  selected={true},
+  author={Wang, Weijia and Lu, Xuequan and De Silva Edirimuni, Dasith and Liu, Xiao and Robles-Kelly, Antonio},
+  booktitle={2022 IEEE International Conference on Multimedia and Expo (ICME)}, 
+  title={Deep Point Cloud Normal Estimation Via Triplet Learning}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1-6},
+  doi={10.1109/ICME52920.2022.9859844},
+  url={https://doi.org/10.1109/ICME52920.2022.9859844},
+  abstract={Current normal estimation methods for 3D point clouds often show limited accuracy in predicting normals at sharp features (e.g., edges and corners) and less robustness to noise. In this paper, we propose a novel normal estimation method for point clouds which consists of two phases: (a) feature encoding to learn representations of local patches, and (b) normal estimation that takes the learned representation as input and regresses the normal vector. We are motivated that local patches on isotropic and anisotropic surfaces respectively have similar and distinct normals, and these separable features or representations can be learned to facilitate normal estimation. To realise this, we design a triplet learning network for feature encoding and a normal estimation network to regress normals. Despite having a smaller network size compared with most other methods, experiments show that our method preserves sharp features and achieves better normal estimation results especially on computer-aided design (CAD) shapes.},
+  preview={triplet_normal_before.png}
+}
+
+@article{zakine2019lamellar,
+  bibtex_show={true},
+  selected={true},
+  author={Zakine, Ruben and de Silva Edirimuni, Dasith and Constantin, Doru and Galatola, Paolo and Fournier, Jean-Baptiste},
+  title={Interaction and structuration of membrane-binding and membrane-excluding colloidal particles in lamellar phases},
+  journal={Soft Matter},
+  year={2019},
+  volume={15},
+  issue={21},
+  pages={4351-4362},
+  publisher={The Royal Society of Chemistry},
+  doi={10.1039/C9SM00230H},
+  url={http://dx.doi.org/10.1039/C9SM00230H},
+  abstract={Within the framework of a discrete Gaussian model, we present analytical results for the interaction induced by a lamellar phase between small embedded colloidal particles. We consider the two limits of particles strongly adherent to the adjacent membranes and of particles impenetrable to the membranes. Our approach takes into account the finite size of the colloidal particles, the discrete nature of the layers, and includes the Casimir-like effect of fluctuations, which is very important for dilute phases. Monte Carlo simulations of the statistical behavior of the membrane-interacting colloidal particles account semi-quantitatively, without any adjustable parameters, for the experimental data measured on silica nanospheres inserted within lyotropic smectics. We predict the existence of finite-size and densely packed particle aggregates originating from the competition between attractive interactions between colloidal particles in the same layer and repulsion between colloidal particles one layer apart.},
+  preview={lamellar_before.png}
 }
