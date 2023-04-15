@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /repositories/
-title: repositories
+title: Repositories
 description: This page provides a list of GitHub repos to code implementations for my research projects.
 nav: true
 nav_order: 3
