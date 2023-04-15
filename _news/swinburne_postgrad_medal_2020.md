@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Awarded the University Medal for the most outstanding postgraduate student among Swinburne's 2020 graduating cohort.
+Awarded the University Medal for most outstanding postgraduate student among Swinburne's 2020 graduating cohort.
