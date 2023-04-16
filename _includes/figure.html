@@ -1,4 +1,5 @@
 {%- assign img_path = include.path | remove: ".jpg" | remove: ".jpeg" | remove: ".png" | remove: ".tiff" -%}
+{%- assign img_id = include.img_id -%}
 
 <figure>
 
@@ -15,6 +16,7 @@
 
     <!-- Fallback to the original file -->
     <img 
+      id="{{ img_id }}"
       src="{{ include.path | relative_url }}"
       {% if include.class %}class="{{ include.class }}"{% endif %}  
       {% if include.width %}width="{{ include.width }}"{% else %}width="auto"{% endif %} 

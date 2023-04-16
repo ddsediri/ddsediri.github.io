@@ -1,7 +1,13 @@
 ---
 ---
+
+{%- assign img_id = entry.preview | remove: ".jpg" | remove: ".jpeg" | remove: ".png" | remove: ".tiff" | remove: "_before" -%}
+{%- assign img_path = entry.preview | remove: ".jpg" | remove: ".jpeg" | remove: ".png" | remove: ".tiff" | remove: "_before" | prepend: '/assets/img/publication_preview/' -%}
+{%- assign img_path_after = img_path | append: "_after.png" -%}
+{%- assign img_path_before = img_path | append: "_before.png" -%}
+
 <!-- _layouts/bib.html -->
-      <div class="row">
+      <div class="row" onmouseover="hover('{{ img_id }}', '{{ img_path_after }}' );" onmouseout="unhover('{{ img_id }}', '{{ img_path_before }}');">
         <div class="col-sm-4 {% if entry.preview %}preview{% else %}abbr{% endif %}">
         {%- if entry.preview -%}
           {% if entry.preview contains '://' -%}
@@ -10,6 +16,7 @@
             {%- assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' -%}
             {% include figure.html
             path=entry_path
+            img_id=img_id
             class="preview z-depth-1"
             alt=entry.preview -%}
           {%- endif -%}

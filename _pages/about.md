@@ -17,3 +17,5 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 I was formally trained as a physicist with a Master of Science degree from the **University of Melbourne** and a Bachelor of Science in Physics with minors in Mathematics and Computer Science from **Hardin-Simmons University**, Abilene, TX. In 2020, I completed a Master of Information Technology from **Swinburne University**, Melbourne and I am currently working towards a PhD in Information Technology at **Deakin University**, Geelong.
+
+My PhD work is on computer vision. More specifically, I work on applications of deep learning to point cloud processing but I am also interested in the intersection between language and vision. In another time, and another life, I looked at physical problems in complex systems.
