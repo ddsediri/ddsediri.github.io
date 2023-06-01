@@ -1,18 +1,18 @@
 ---
 layout: project
 title: IterativePFN&#58; True Iterative Point Cloud Filtering
-description: A neural network architecture that internnaly models the iterative filtering process and gradually removes noise from point clouds. Accepted to CVPR, 2023
+description: A neural network architecture that internally models the iterative filtering process and gradually removes noise from point clouds. Accepted to CVPR, 2023
 img: assets/img/projects/iterativepfn/thumbnail.png
 importance: 1
 category: work
 ---
 
-<div style="text-align: center">
+<div class="authors-image">
     {% include figure.html path="assets/img/projects/iterativepfn/profiles.png" title="People" %}
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <p style="text-align: center">
+        <p class="authors">
             Dasith de Silva Edirimuni<sup>1</sup>, Xuequan Lu<sup>1</sup>, Zhiwen Shao<sup>2</sup>, Gang Li<sup>1</sup>, Antonio Robles-Kelly<sup>1,4</sup>, Ying He<sup>3</sup>
         </p>
     </div>
@@ -20,7 +20,7 @@ category: work
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <p style="text-align: center">
+        <p class="affiliations">
             <sup>1</sup>School of Information Technology, Deakin University, <sup>2</sup>chool of Computer Science and Technology, China University of Mining and Technology, <sup>3</sup>School of Computer Science and Engineering, Nanyang Technological University, <sup>4</sup>Defense Science and Technology Group, Australia
         </p>
     </div>

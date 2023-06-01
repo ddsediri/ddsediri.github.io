@@ -526,6 +526,35 @@ footer.sticky-bottom {
   }
 }
 
+.single-project {
+  .align-center {
+    text-align: center;
+  }
+
+  .title {
+    font-weight: bold;
+  }
+
+  .description {
+    font-style: italic;
+  }
+
+  .authors {
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+  .authors-image {
+    text-align: center;
+  }
+
+  .affiliations {
+    text-align: center;
+    font-size: 0.6em;
+  }
+}
+
+
 
 // Publications
 
