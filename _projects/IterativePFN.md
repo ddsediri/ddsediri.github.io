@@ -31,6 +31,11 @@ category: work
 </p>
 
 ## Method
+
+<p style="text-align: justify; text-justify: inter-word;">We present IterativePFN, a novel architecture geared towards filtering point clouds. We design IterationModules, that consume directed graphs of point cloud patches to produce rich node (point) features that are then used to generate filtered displacements. These displacements regress noisy points back towards the underlying clean surface. Unlike current methods that only apply iterative filtering at test times, our method extends iterative filtering to a true train + test time solution where the relationships between consecutive, intermediate displacements are learned by the network.  
+</p>
+
+### IterativePFN pipeline
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/projects/iterativepfn/network.png" title="IterativePFN architecture" class="img-fluid rounded z-depth-1" %}
@@ -39,17 +44,26 @@ category: work
 <div class="caption">
     IterativePFN network architecture.</div>
 
-### Adaptive Ground Truth loss function
+<p style="text-align: justify; text-justify: inter-word;">To train our network, we employ a novel adaptive ground truth loss function to supervise training.
+</p>
+
+### Adaptive ground truth loss function
 
 <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/projects/iterativepfn/Adaptive_GT_0.png" title="Adaptive ground truth" class="img-fluid rounded z-depth-1" %}
+    </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/projects/iterativepfn/Adaptive_GT_1.png" title="Adaptive ground truth" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
 <div class="caption">
-    Illustration of novel adaptive ground truth loss function for gradually filtering points which also facilitates joint training of IterationModules and allows the network to learn relationships between intermediate filtered displacements. 
+    Left: Current methods attempt to directly regress noisy points back to underlying clean surfaces. However, for high noise point clouds, they must iteratively apply filtering. These methods do not consider the relationships between inferred displacements across iterations is not considered. Right: Our novel adaptive ground truth loss function gradually filters points and facilitates joint training of IterationModules. This allows the network to learn relationships between intermediate filtered displacements. 
 </div>
+
+<p style="text-align: justify; text-justify: inter-word;">The adaptive ground truth loss function that supervises training is constructed as follows:
+</p>
 
 Our adaptive ground truth loss, per point, per IterationModule, can be expressed as:
 
