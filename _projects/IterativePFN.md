@@ -21,7 +21,7 @@ category: [Point Cloud Filtering]
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <p class="affiliations">
-            <sup>1</sup>School of Information Technology, Deakin University, <sup>2</sup>chool of Computer Science and Technology, China University of Mining and Technology, <sup>3</sup>School of Computer Science and Engineering, Nanyang Technological University, <sup>4</sup>Defense Science and Technology Group, Australia
+            <sup>1</sup>School of Information Technology, Deakin University, <sup>2</sup>School of Computer Science and Technology, China University of Mining and Technology, <sup>3</sup>School of Computer Science and Engineering, Nanyang Technological University, <sup>4</sup>Defense Science and Technology Group, Australia
         </p>
     </div>
 </div>
