@@ -1,1 +1,1 @@
-THis is my personal website, running on Jekyll, which uses the [Al-folio](https://alshedivat.github.io/al-folio/) template.
+This is my personal website, running on Jekyll, which uses the [Al-folio](https://alshedivat.github.io/al-folio/) template.
