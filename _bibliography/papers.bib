@@ -1,6 +1,22 @@
 ---
 ---
 
+@InProceedings{edirimuni2024straightpcf,
+  bibtex_show={true},
+  selected={true},
+  abbr={CVPR},
+  title={StraightPCF: Straight Point Cloud Filtering},
+  author={de Silva Edirimuni, Dasith and Lu, Xuequan and Li, Gang and Wei, Lei and Robles-Kelly, Antonio and Li, Hongdong},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month={June},
+  year={2024},
+  pages={},
+  doi={},
+  url={https://ddsediri.github.io/projects/StraightPCF/},
+  abstract={Point cloud filtering is a fundamental 3D vision task, which aims to remove noise while recovering the underlying clean surfaces. State-of-the-art methods remove noise by moving noisy points along stochastic trajectories to the clean surfaces. These methods often require regularization within the training objective and/or during post-processing, to ensure fidelity. In this paper, we introduce StraightPCF, a new deep learning based method for point cloud filtering. It works by moving noisy points along straight paths, thus reducing discretization errors while ensuring faster convergence to the clean surfaces. We model noisy patches as intermediate states between high noise patch variants and their clean counterparts, and design the VelocityModule to infer a constant flow velocity from the former to the latter. This constant flow leads to straight filtering trajectories. In addition, we introduce a DistanceModule that scales the straight trajectory using an estimated distance scalar to attain convergence near the clean surface. Our network is lightweight and only has ∼530K parameters, being 17% of IterativePFN (a most recent point cloud filtering network). Extensive experiments on both synthetic and real-world data show our method achieves state-of-the-art results. Our method also demonstrates nice distributions of filtered points without the need for regularization. The implementation code can be found at: https://github.com/ddsediri/StraightPCF.},
+  preview={straightpcf_before.png}
+}
+
 @InProceedings{edirimuni2023iterativepfn,
   bibtex_show={true},
   selected={true},
