@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper was accepted to the Soft Matter journal.
+**Interaction and structuration of membrane-binding and membrane-excluding colloidal particles in lamellar phases** paper accepted to the Soft Matter journal.

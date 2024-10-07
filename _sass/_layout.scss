@@ -33,6 +33,25 @@ body.sticky-bottom-footer {
   }
 }
 
+// News
+.news {
+  overflow: auto;
+  height: 10em;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumb-news-BG) var(--scrollbar-news-BG);
+  margin-bottom: 1rem;
+}
+
+// Publications
+.publications {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 30em;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumb-pub-BG) var(--scrollbar-pub-BG);
+  margin-bottom: 1rem;
+}
+
 // TODO: redefine content layout.
 
 
