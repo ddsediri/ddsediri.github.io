@@ -35,8 +35,8 @@ body.sticky-bottom-footer {
 
 // News
 .news {
-  overflow: auto;
-  height: 10em;
+  overflow: none;
+  // height: 10em;
   scrollbar-width: thin;
   scrollbar-color: var(--thumb-news-BG) var(--scrollbar-news-BG);
   margin-bottom: 1rem;
@@ -44,9 +44,9 @@ body.sticky-bottom-footer {
 
 // Publications
 .publications {
-  overflow-y: auto;
+  overflow-y: none;
   overflow-x: hidden;
-  height: 30em;
+  // height: 30em;
   scrollbar-width: thin;
   scrollbar-color: var(--thumb-pub-BG) var(--scrollbar-pub-BG);
   margin-bottom: 1rem;

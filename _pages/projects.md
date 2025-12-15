@@ -5,7 +5,7 @@ permalink: /projects/
 description: My recent projects.
 nav: true
 nav_order: 2
-display_categories: [Point Cloud Filtering]
+display_categories: [Point Cloud Generation, Point Cloud Filtering]
 horizontal: false
 ---
 
