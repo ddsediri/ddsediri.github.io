@@ -1,14 +1,14 @@
 ---
 layout: project
 title: StraightPCF&#58; Straight Point Cloud Filtering
-description: A new method that models noisy patches as intermediate states in a filtering process that moves points along straight flows. Accepted to CVPR, 2024
+description: A new method that models noisy patches as intermediate states in a filtering process that moves points along straight flows. Published and presented at CVPR, 2024
 img: assets/img/projects/straightpcf/network.png
 importance: 1
 category: [Point Cloud Filtering]
 ---
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/straightpcf_teaser.png" title="StraightPCF Filtering Trajectories" class="img-fluid rounded z-depth-1" %}
+    {% include figure.html path="assets/img/projects/straightpcf/Image_straight_trajectories.png" title="StraightPCF Filtering Trajectories" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
@@ -29,7 +29,7 @@ Our network is lightweight with only ~530K parameters — just 17% of IterativeP
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/straightpcf_architecture.png" title="StraightPCF Network Architecture" class="img-fluid rounded z-depth-1" %}
+    {% include figure.html path="assets/img/projects/straightpcf/network.png" title="StraightPCF Network Architecture" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
@@ -68,7 +68,7 @@ On the PCNet dataset at 10K resolution and σ = 3% noise (unseen during training
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/straightpcf_synthetic.png" title="Visual Filtering Results" class="img-fluid rounded z-depth-1" %}
+    {% include figure.html path="assets/img/projects/straightpcf/Image_PU_PC_results.png" title="Visual Filtering Results" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
@@ -81,12 +81,22 @@ On the **Kinect v1** dataset (71 point clouds), StraightPCF achieves a 1.82% red
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/straightpcf_ruemadame.png" title="Paris-Rue-Madame Results" class="img-fluid rounded z-depth-1" %}
+    {% include figure.html path="assets/img/projects/straightpcf/Image_RM_scan_results.png" title="Paris-Rue-Madame Results" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
   Visual filtering results on two scenes from the Paris-Rue-Madame dataset. StraightPCF recovers the underlying clean surface with better point distributions, while methods like PDFlow and IterativePFN leave noisy artefacts or cause clustering along scan lines.
 </div>
+
+<style>
+.grid-table {
+  border-collapse: collapse;
+}
+.grid-table th, .grid-table td {
+  border: 1px solid #666;
+  padding: 6px;
+}
+</style>
 
 ### Ablation Study
 
@@ -97,21 +107,28 @@ On the **Kinect v1** dataset (71 point clouds), StraightPCF achieves a 1.82% red
 | V3: Large VM | 2.17 | 0.41 | 2.99 | 0.84 | 3.54 | 1.29 |
 | V4: CVM w/o DM | 1.97 | 0.32 | 3.01 | 0.92 | 3.71 | 1.45 |
 | **V5: CVM w/ DM (Ours)** | **1.87** | **0.24** | **2.64** | **0.60** | **3.29** | **1.13** |
+{:.grid-table}
 
 The ablation confirms that both VelocityModule coupling and the DistanceModule are critical to the full method's performance. Values ×10⁴ at 10K resolution on PUNet.
 
 ---
 
+<style>
+pre code {
+  font-size: 14px !important;
+}
+</style>
+
 ## BibTeX
 
 ```bibtex
 @InProceedings{deSilvaEdirimuni_2024_CVPR,
-  author    = {de Silva Edirimuni, Dasith and Lu, Xuequan and Li, Gang and Wei, Lei and Robles-Kelly, Antonio and Li, Hongdong},
-  title     = {StraightPCF: Straight Point Cloud Filtering},
+  author = {de Silva Edirimuni, Dasith and Lu, Xuequan and Li, Gang and Wei, Lei and Robles-Kelly, Antonio and Li, Hongdong},
+  title = {StraightPCF: Straight Point Cloud Filtering},
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  month     = {June},
-  year      = {2024},
-  pages     = {20721--20730}
+  month = {June},
+  year = {2024},
+  pages = {20721--20730}
 }
 ```
 
@@ -121,18 +138,18 @@ The ablation confirms that both VelocityModule coupling and the DistanceModule a
 
 <div class="row mt-3">
   <div class="col-sm-auto">
-    <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/de_Silva_Edirimuni_StraightPCF_Straight_Point_Cloud_Filtering_CVPR_2024_paper.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">
+    <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/de_Silva_Edirimuni_StraightPCF_Straight_Point_Cloud_Filtering_CVPR_2024_paper.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:32px;">
       <i class="fas fa-file-pdf"></i> PDF
     </a>
   </div>
   <div class="col-sm-auto">
-    <a href="https://github.com/ddsediri/StraightPCF" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">
+    <a href="https://github.com/ddsediri/StraightPCF" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:32px;">
       <i class="fab fa-github"></i> Code
     </a>
   </div>
   <div class="col-sm-auto">
-    <a href="https://openaccess.thecvf.com/content/CVPR2024/html/de_Silva_Edirimuni_StraightPCF_Straight_Point_Cloud_Filtering_CVPR_2024_paper.html" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">
-      <i class="ai ai-cvf"></i> CVF
+    <a href="https://openaccess.thecvf.com/content/CVPR2024/html/de_Silva_Edirimuni_StraightPCF_Straight_Point_Cloud_Filtering_CVPR_2024_paper.html" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:32px;">
+      <i class="fa fa-file"></i> CVF
     </a>
   </div>
 </div>
